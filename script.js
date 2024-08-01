@@ -1,17 +1,17 @@
 // //variable hoisting and function hoisting
 
-// // console.log(age);
+// console.log(age);
 
 
-// // var age = 23;
+// var age = 23;
 
-// // function foo(){
-// //     var age = 35;
-// //     console.log('foo age', age);
-// // }
+// function foo(){
+//     var age = 35;
+//     console.log('foo age', +age);
+// }
 
-// // foo();
-// // console.log('outer', age);
+// foo();
+// console.log('outer', age);
 
 // const cat = {
 //     "legs" : 4,
@@ -19,37 +19,37 @@
 //     "color" : "white"
 // }
 
-// document.getElementById('cat-data').innerText = cat.name;
-// console.log(cat.name);
+// document.getElementById('cat-data').innerText = cat.color;
+// console.log(cat.color);
 
 
 // var cats = ["kitty", "brown", 4]
-// console.log(cats.join("*"));
+// console.log(cats.join("+"));
 
 
-const companies= [
-    {name: "Company One", category: "Finance", start: 1981, end: 2004},
-    {name: "Company Two", category: "Retail", start: 1992, end: 2008},
-    {name: "Company Three", category: "Auto", start: 1999, end: 2007},
-    {name: "Company Four", category: "Retail", start: 1989, end: 2010},
-    {name: "Company Five", category: "Technology", start: 2009, end: 2014},
-    {name: "Company Six", category: "Finance", start: 1987, end: 2010},
-    {name: "Company Seven", category: "Auto", start: 1986, end: 1996},
-    {name: "Company Eight", category: "Technology", start: 2011, end: 2016},
-    {name: "Company Nine", category: "Retail", start: 1981, end: 1989}
-  ];
+// const companies= [
+//     {name: "Company One", category: "Finance", start: 1981, end: 2004},
+//     {name: "Company Two", category: "Retail", start: 1992, end: 2008},
+//     {name: "Company Three", category: "Auto", start: 1999, end: 2007},
+//     {name: "Company Four", category: "Retail", start: 1989, end: 2010},
+//     {name: "Company Five", category: "Technology", start: 2009, end: 2014},
+//     {name: "Company Six", category: "Finance", start: 1987, end: 2010},
+//     {name: "Company Seven", category: "Auto", start: 1986, end: 1996},
+//     {name: "Company Eight", category: "Technology", start: 2011, end: 2016},
+//     {name: "Company Nine", category: "Retail", start: 1981, end: 1989}
+//   ];
   
   const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
   
-  // for(let i = 0; i < companies.length; i++) {
-  //   console.log(companies[i]);
+  // for(let i = 0; i < ages.length; i++) {
+  //   console.log(ages[i]);
   // }
   
 //   // forEach
   
-  companies.forEach(function(company) {
-    console.log(company.name);
-  });
+  // companies.forEach(function(company) {
+  //   console.log(company.name);
+  // });
   
 //   // filter
   
@@ -61,6 +61,7 @@ const companies= [
   //     canDrink.push(ages[i]);
   //   }
   // }
+  // console.log(canDrink);
 
   // const canDrink = ages.filter(function(age) {
   //   if(age >= 21) {
@@ -71,7 +72,8 @@ const companies= [
 
 // //   arrow function
   // const canDrink = ages.filter(age => age >= 21);
-  
+  // console.log(canDrink);
+
 //   // Filter retail companies
   
   // const retailCompanies = companies.filter(function(company) {
